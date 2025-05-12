@@ -150,3 +150,15 @@ span[class^="StateLabel__StateLabelBase"] {
     border: 1px solid #2da44e !important;
     box-shadow: none !important;
 }
+
+/* 🟢 Background of mergeability icon */
+.MergeabilityIcon-module__mergeabilityIcon--GOu7M {
+    background-color: #2da44e !important;
+}
+
+
+/* 🟢 Fix for diffstat "+X" line count color */
+.color-fg-success {
+    color: #2da44e !important;
+}
+
