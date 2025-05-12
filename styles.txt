@@ -1,0 +1,152 @@
+/*Styles for Stylus*/
+/*https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne*/
+
+/* === PR Status Badges === */
+
+/* Open PR */
+.State--open {
+    background-color: #2da44e !important;
+    color: white !important;
+    border: 1px solid #2da44e !important;
+    box-shadow: none !important;
+}
+
+/* Closed PR */
+.State--closed {
+    background-color: #cf222e !important;
+    color: white !important;
+    border-color: #cf222e !important;
+}
+
+/* Merged PR */
+.State--merged {
+    background-color: #8250df !important;
+    color: white !important;
+    border-color: #8250df !important;
+}
+
+
+
+/* === New Pull Request Button === */
+a.Button--primary[href$="/compare"] {
+    background-color: #2da44e !important;
+    color: white !important;
+    border-color: #2da44e !important;
+}
+
+/* === Generic Buttons (legacy GitHub styling support) === */
+button.btn-primary.btn,
+.select-menu-button.btn-primary.btn,
+.js-merge-branch-action.btn-primary,
+.js-merge-branch-action.btn-primary:hover {
+    background-color: #2da44e !important;
+    color: white !important;
+    border-color: #2da44e !important;
+}
+
+/* === Merge Pull Request (GitHub's new component-based UI) === */
+
+/* Main green "Merge pull request" button */
+button[class*="prc-Button-ButtonBase"][data-variant="primary"] {
+    background-color: #2da44e !important;
+    border-color: #2da44e !important;
+    color: white !important;
+}
+
+/* Right-side green dropdown arrow button */
+button[class*="prc-Button-IconButton"][data-variant="primary"] {
+    background-color: #2da44e !important;
+    border-color: #2da44e !important;
+    color: white !important;
+}
+
+/* Dropdown triangle icon (white instead of blue) */
+svg.octicon-triangle-down {
+    fill: white !important;
+    color: white !important;
+}
+
+/* ✅ Set background of success circle to green, keep checkmark white */
+.bgColor-success-emphasis {
+    background-color: #2da44e !important;
+}
+
+/* 🔴 Style "Close pull request" button red */
+button.js-quick-submit-alternative.js-comment-and-button {
+    background-color: #da3633 !important;
+    border-color: #da3633 !important;
+    color: white !important;
+}
+
+/* 🔴 Make the icon in "Close pull request" button match the red text */
+button.js-quick-submit-alternative.js-comment-and-button .octicon-git-pull-request-closed {
+    fill: white !important;
+    color: white !important;
+}
+
+/* 🟢 Make PR event (reopened) circle background green (CHECK!!) */
+.color-bg-open-emphasis {
+    background-color: #2da44e !important;
+}
+
+
+/* 🔴 Make PR event circle (closed) background red */
+.color-bg-closed-emphasis {
+    background-color: #da3633 !important;
+}
+
+/* === Diff Coloring === */
+
+/* ✅ Added lines — green background */
+.blob-code-addition {
+    background-color: #033a16 !important;
+    color: #adf0c2 !important; /* optional, improves contrast */
+}
+
+/* ✅ Removed lines — red background */
+.blob-code-deletion {
+    background-color: #490f0f !important;
+    color: #ffc0c0 !important; /* optional */
+}
+
+/* === Review Actions === */
+
+/* ✅ "Review changes" button — green */
+button.js-reviews-toggle {
+    background-color: #2da44e !important;
+    border-color: #2da44e !important;
+    color: white !important;
+}
+
+/* ✅ "Submit review" button — green */
+button[type="submit"].Button--primary {
+    background-color: #2da44e !important;
+    border-color: #2da44e !important;
+    color: white !important;
+}
+
+/* === Review Radio Button Styling === */
+
+/* ✅ Radio circle border (selected state) — green */
+.FormControl-radio:checked {
+    border-color: #2da44e !important;
+    background-color: white !important;
+}
+
+/* ✅ Radio circle bullet (dot) — white */
+.FormControl-radio:checked::before {
+    background-color: white !important;
+}
+
+/* ✅ diff lines added */
+.diffstat-block-added {
+    background-color: #2da44e !important;
+}
+
+/* ✅ Fix "Open" badge in Commits tab */
+span[class^="StateLabel__StateLabelBase"] {
+    background-color: #2da44e !important;
+    color: white !important;
+    border: 1px solid #2da44e !important;
+    box-shadow: none !important;
+}
